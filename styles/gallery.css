@@ -1,0 +1,107 @@
+.gallery {
+	width: 100%;
+	max-width: 80rem;
+	padding: 2.5rem 2rem;
+	margin-inline: auto;
+
+	& header {
+		text-align: center;
+
+		& span {
+			font: 500 var(--text-sm) / 1.5 var(--font-family);
+		}
+	}
+
+	& .content {
+		margin-top: 2rem;
+		display: grid;
+		grid-template-areas: "A B B" "C C D";
+		gap: 2.5rem;
+
+		& figure {
+			border-radius: 2.5rem;
+			overflow: hidden;
+			line-height: 0;
+			position: relative;
+
+			& > img {
+				height: 25rem;
+				object-fit: cover;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: 20%;
+				background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+				opacity: 0;
+				transition: opacity 0.4s ease;
+				z-index: 1;
+			}
+
+			&:hover {
+				& > img {
+					scale: 1.1;
+				}
+
+				&::after {
+					opacity: 1;
+				}
+
+				& figcaption {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+
+			&:nth-child(1) {
+				grid-area: A;
+			}
+
+			&:nth-child(2) {
+				grid-area: B;
+			}
+
+			&:nth-child(3) {
+				grid-area: C;
+			}
+
+			&:nth-child(4) {
+				grid-area: D;
+			}
+		}
+
+		& img {
+			width: 100%;
+			height: auto;
+		}
+
+		& figcaption {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 0.5rem;
+			font: 500 var(--text-sm) / 1.5 var(--font-family);
+			color: white;
+			position: absolute;
+			bottom: 0;
+			transform: translateY(100%);
+			opacity: 0;
+			width: 100%;
+			padding: 1.5rem 2rem;
+			background: linear-gradient(to top, rgb(0 0 0 / 0.64)), rgb(0, 0, 0 / 0);
+			transition: transform 0.4s ease, opacity 0.4s ease;
+			z-index: 2;
+
+			& img {
+				width: 2rem;
+				aspect-ratio: 1/1;
+				object-fit: cover;
+				border-radius: 50%;
+			}
+		}
+	}
+}
