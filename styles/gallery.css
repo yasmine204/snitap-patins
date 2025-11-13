@@ -107,7 +107,7 @@
 	}
 }
 
-@media (width <= 25em) {
+@media (width <= 32em) {
 	.gallery {
 		max-width: 25rem;
 		padding: 1.5rem;

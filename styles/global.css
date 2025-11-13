@@ -56,7 +56,7 @@ ul {
 	list-style: none;
 }
 
-@media (width <= 25em) {
+@media (width <= 32em) {
 	:root {
 		--text-sm: 0.75rem;
 		--text-xl: 2rem;

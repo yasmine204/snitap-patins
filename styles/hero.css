@@ -212,10 +212,9 @@ section.hero {
 	}
 }
 
-@media (width <= 25em) {
+@media (width <= 32em) {
 	section.hero {
 		padding: 1rem 1.5rem 3rem;
-
 		flex-direction: column-reverse;
 		gap: 2rem;
 

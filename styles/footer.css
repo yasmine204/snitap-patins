@@ -60,7 +60,7 @@ footer {
 	}
 }
 
-@media (width <= 25em) {
+@media (width <= 32em) {
 	footer {
 		padding: 3rem 1.5rem 1.5rem;
 		flex-direction: column;

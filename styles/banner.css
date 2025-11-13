@@ -40,7 +40,7 @@
 	}
 }
 
-@media (width <= 25em) {
+@media (width <= 32em) {
 	.banner {
 		padding-block: 1.5rem;
 	}
