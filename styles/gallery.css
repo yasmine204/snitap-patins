@@ -106,3 +106,27 @@
 		}
 	}
 }
+
+@media (width <= 25em) {
+	.gallery {
+		max-width: 25rem;
+		padding: 1.5rem;
+
+		& .content {
+			margin-top: 1.5rem;
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+
+			& figure {
+				width: 19.5rem;
+				height: 16rem;
+				align-self: center;
+
+				& > img {
+					height: 100%;
+				}
+			}
+		}
+	}
+}

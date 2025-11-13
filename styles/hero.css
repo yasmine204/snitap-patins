@@ -211,3 +211,37 @@ section.hero {
 		opacity: 100%;
 	}
 }
+
+@media (width <= 25em) {
+	section.hero {
+		max-width: 25rem;
+		padding: 1rem 1.5rem 3rem;
+		flex-direction: column;
+		flex-direction: column-reverse;
+		gap: 2rem;
+
+		& > div:nth-child(2) {
+			max-width: 19.5rem;
+			height: 19.5rem;
+		}
+
+		& h1 {
+			max-width: 19.5rem;
+		}
+
+		& h1 div {
+			height: 2.3125rem;
+		}
+
+		& > div:nth-child(1) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		& .buttons {
+			flex-direction: column;
+			flex-direction: column-reverse;
+		}
+	}
+}

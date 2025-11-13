@@ -39,3 +39,9 @@
 		background-position: 100% 50%;
 	}
 }
+
+@media (width <= 25em) {
+	.banner {
+		padding-block: 1.5rem;
+	}
+}
