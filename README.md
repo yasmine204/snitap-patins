@@ -1,7 +1,7 @@
 <h1 align="center">Snitap Patins</h1>
 
 <p align="center">
-  Uma landing page moderna e animada para a marca **Snitap Patins**, que une estilo, movimento e diversão sobre rodas.
+  Uma landing page moderna e animada para a marca <strong>Snitap Patins</strong>, que une estilo, movimento e diversão sobre rodas.
 </p>
 
 <p align="center">
