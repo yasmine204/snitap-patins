@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img alt="Preview do Snitap" src="./.github/preview.png" width="100%">
+  <img alt="Preview do Snitap" src="./.github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
