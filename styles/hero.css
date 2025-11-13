@@ -214,9 +214,8 @@ section.hero {
 
 @media (width <= 25em) {
 	section.hero {
-		max-width: 25rem;
 		padding: 1rem 1.5rem 3rem;
-		flex-direction: column;
+
 		flex-direction: column-reverse;
 		gap: 2rem;
 
@@ -225,23 +224,43 @@ section.hero {
 			height: 19.5rem;
 		}
 
-		& h1 {
+		& > div:nth-child(1) {
 			max-width: 19.5rem;
 		}
 
 		& h1 div {
 			height: 2.3125rem;
+			vertical-align: top;
 		}
 
-		& > div:nth-child(1) {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+		& h1 span {
+			animation: slideUp 8s 2s infinite ease;
 		}
 
 		& .buttons {
-			flex-direction: column;
 			flex-direction: column-reverse;
+		}
+	}
+
+	@keyframes slideUp {
+		0%,
+		20% {
+			transform: translateY(0);
+		}
+
+		25%,
+		45% {
+			transform: translateY(-100%);
+		}
+
+		50%,
+		70% {
+			transform: translateY(-200%);
+		}
+
+		75%,
+		100% {
+			transform: translateY(-300%);
 		}
 	}
 }
