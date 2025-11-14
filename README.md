@@ -15,6 +15,12 @@ Esse projeto foi desenvolvido com:
 - HTML
 - CSS (animações com @keyframes)
 
+## 🌐 Acesse o projeto
+
+Você pode visualizar o site publicado clicando no link abaixo:
+
+🔗 [Acessar página online](https://yasmine204.github.io/snitap-patins/)
+
 ## 🎨 Interface no Figma
 
 A interface foi construída com base no design do Figma.  
